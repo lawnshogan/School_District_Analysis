@@ -1,26 +1,27 @@
-# School_District_Analysis
-Python project regarding data within a school district.
 <p align="center">
-    Stock-Analysis (Deliverable 2)
+    School District Analysis
 </p>
 
 <p align="center">
-    Module 2 for Data Science Bootcamp - VBA Scripting
+    Module 4 for Data Science Bootcamp - Python (Jupyter Notebook)
 </p>
 
 <p align="center">
     STUDY GROUP FOR MODULE 2 - Ryan Knauff, Cayli Swartz, Marshall Miley, Lora Leonida
 </p>
 
-###  **Project Overview**
-- Steve needs help analyzing stock data from 2017 and 2018. His parents want to invest in one, Steve wants to make sure they are investing their money based on facts and supporting evidence. He's sent you the data to begin the analysis, which will require the use of VBA scripting. The spreadsheet contains data regarding the ticker, Date, Open, Close, High, Low, Adj Close and Volume.
+##  **Project Overview**
+- The school board needs help with an analysis of data regarding their schools reading and math testing scores. We were provided two seperate csv files. The first contains data regarding the budget, size and type of schools in the district. The second displays data regarding the individual students like their name, gender, grade level, school and reading/math scores.
 
-- ### Stock data and its purpose:
+<p align="center">
+     School District data and its purpose
+</p>
+
     1. Why are we analyzing this data?
     2. What is the goal and possible outcomes?
     3. What pieces of data can help build toward and obtain our goal(s)?
 
-- Steve wants to find the total daily volume and yearly return for each stock. It's important that Steve can interact with the spreadsheet in order to obtain the data from 2017 or 2018. His families financial future is in my hands, so I better create an accurate analysis.
+- Maria, the Chief Data Scientist for the city school district, is tasked with preparing all standarized test data for analysis, reporting, and presentation to provide insight for performance trends and patterns. The results of this analysis will help the school board create meaningful budgets for these schools. I better create an accurate analysis, while also keeping the utmost confidentiality of this data, as it contains information that is viewed as sensitive.
 
 ## **Analysis**
 This was personally a learning curve assignment because I had never used VBA in this way before, so I carefully worked through every step. 
@@ -34,7 +35,7 @@ Within this subroutine, it's important to activate our spreadsheet for the analy
 Once this formatted, I moved onto creating an array of all the tickers in column A from each sheet.
 - I then used a ROWcount (found online) to loop over this column.
 
-## **The fun begins...**
+### **The fun begins...**
 
 **1a)** This portion of the code uses Dim to assign variable 0 to tickerIndex as an Integer since it's a whole number.
 
