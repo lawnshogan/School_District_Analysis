@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    STUDY GROUP FOR MODULE 2 - Ryan Knauff, Cayli Swartz, Marshall Miley, Lora Leonida
+    STUDY GROUP FOR MODULE 4 - Ryan Knauff, Cayli Swartz, Marshall Miley, Lora Leonida
 </p>
 
 ##  **Project Overview**
@@ -24,46 +24,23 @@
 - Maria, the Chief Data Scientist for the city school district, is tasked with preparing all standarized test data for analysis, reporting, and presentation to provide insight for performance trends and patterns. The results of this analysis will help the school board create meaningful budgets for these schools. I better create an accurate analysis, while also keeping the utmost confidentiality of this data, as it contains information that is viewed as sensitive.
 
 ## **Analysis**
-This was personally a learning curve assignment because I had never used VBA in this way before, so I carefully worked through every step. 
-
-First step was creating a module and starting a subroutine.
-
-Within this subroutine, it's important to activate our spreadsheet for the analysis and format your analysis spreadsheet (titles). The Cell and Range were used to assign values to specific cells.
-- I wanted the title in 'A1' to reflect what year was being shown based on what data was active.
-- Range("A1").Value = "All Stocks (" + yearValue + ")"
-
-Once this formatted, I moved onto creating an array of all the tickers in column A from each sheet.
-- I then used a ROWcount (found online) to loop over this column.
-
-### **The fun begins...**
-
-**1a)** This portion of the code uses Dim to assign variable 0 to tickerIndex as an Integer since it's a whole number.
-
-**1b)** Set three output arrays for volume, starting and ending prices.
-
-**2a)** Create a loop to inilialize the tickerVolumes to zero.
-
-**2b)** Loop over all the rows in the spreadsheet using RowCount
-
-We now want to create a script that increases the current tickerVolumes (stock ticker volume) variable and adds the ticker volume for the current stock ticker.
-
-**3a)** Increase volume for current ticker
-
-**3b)** Check if the current row is the **first** with tickerIndex. If it is, then assign **Start Price**
-
-**3c)** Do the same as 3b, however for the **last row**, then assign a **Ending Price**
-
-**3d)** Used to increase the tickerIndex by 1 when the next cell ticker doesn't match current cell ticker 
-
-**4)** Finally, it's time to Loop through the arrays to output the Ticker, Total Daily Volume, and Return.
-
-   <p align="center">
-   Final Code
-</p>
+I was able to go through and create a full report by using python to read and write our data into an easy to read report from their csv's. It's important with our analysis to be flexible as of course some new information came to light, and our report needed to adjusted last minute to account for these changes.  It appears the 9th grade students were able to accesss records and altered their reading and math scores. It's important we find these 9th graders from Thomas High School and add NaN to their score so it is not counted in our analysis. This was done using the loc() method after importing the numpy library.
 
 <p align="center">
-  <img src="https://github.com/lawnshogan/stock-analysis/blob/main/Code%20Block%20VBA.png" width="700"/>
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Deliverable%201.png" width="700"/>
 </p>
+
+### **The results...**
+
+<p align="center">
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Deliverable%201%20-%20Results.png" width="700"/>
+</p>
+
+
+
+
+
+
 
 
 With that being said, Steve is not going to care about our code. Steve is looking for cold hard results that are easy to read and interpret. As I said above, his family's financial future is in my hands.
