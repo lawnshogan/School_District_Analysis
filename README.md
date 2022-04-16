@@ -37,54 +37,82 @@ I was able to go through and create a full report by using python to read and wr
 </p>
 
 
+With this data now accounted for in our dataset, it's time to move onto the second deliverable and recalulate the following metrics:
 
+- The district summary
+- The school summary
+- The top 5 and bottom 5 performing schools, based on the overall passing rate
+- The average math score for each grade level from each school
+- The average reading score for each grade level from each school
+- The scores by school spending per student, by school size, and by school type
 
-
-
-
-
-With that being said, Steve is not going to care about our code. Steve is looking for cold hard results that are easy to read and interpret. As I said above, his family's financial future is in my hands.
-- When the code is entered, a pop-up instructs the user to choose what year they wish to get results for.
-- Enter 2017 and the following results appear:
-
-<p align="center">
-  <img src="https://github.com/lawnshogan/stock-analysis/blob/main/VBA_Challenge_2017.png" width="700"/>
-</p>
-
-- Run the script again and enter 2018 instead:
+### **The District Summary**
 
 <p align="center">
-  <img src="https://github.com/lawnshogan/stock-analysis/blob/main/VBA_Challenge_2018.png" width="700"/>
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Readme_Images/Deliverable%202%20-%20District%20Summary.png" width="700"/>
 </p>
+
+### **The School Summary**
+
+<p align="center">
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Readme_Images/Deliverable%202%20-%20School%20Summary.png" width="700"/>
+</p>
+
+
+### **Top 5 / Bottom 5 Schools**
+
+<p align="center">
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Readme_Images/Deliverable%202%20-%20Top%20and%20Bottom%20Schools.png" width="700"/>
+</p>
+
+### **Average Math / Reading Scores per Grade Level**
+
+<p align="center">
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Readme_Images/Deliverable%202%20-%20New%20Math%20Scores.png" width="700"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Readme_Images/Deliverable%202%20-%20New%20Reading%20Scores.png" width="700"/>
+</p>
+
+
+### **School Spending per Student by School Size**
+
+<p align="center">
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Readme_Images/Deliverable%202%20-%20Average%20school%20spending%20by%20size.png" width="700"/>
+</p>
+
+### **School Spending per Student by School Type**
+
+<p align="center">
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Readme_Images/Deliverable%202%20-%20Average%20school%20spending%20by%20type.png" width="700"/>
+</p>
+
 
 ### **Results**
 
-### 2017:
-After the code ran for 0.07 seconds, the results for 2017 showed the following:
 
-1. TERP was the only stock which would have produced a negative return (-7.2%).
-2. FSLR had the largest daily volume and was 4th in returns. 
-3. DQ, ENPH, FSLR & SEDG all had return gains over 100%.
+1. How is the district summary affected?
+- The overall passing percentages lowered slightly because the fake, high scores were taken out of consideration to the overall total.
+2. How is the school summary affected?
+- The overall passing percentages lowered slightly for Thomas High School - high scores were taken out of consideration to the overall total.
 
-### 2018:
-When running the code for 2018 (0.08 seconds runtime), the results told a different story:
+3. How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+- The sample size of Thomas High School becomes smaller and will affect the overall performance numbers. We can assume they created higher grades for these students, therefore taking them out will lower the overall scores of the school.
 
-1. All stocks produced a negative return, with the exception of ENPH (81.9%) and RUN (84%).
-2. ENPH amd RUN also have the top 2 in total daily volume.
-3. DQ, FSLR, JKS, SPWR all had losses of over -35%.
+4. How does replacing the ninth-grade scores affect the following:
+- Math and reading scores by grade - The overall grade scores lowered slightly.
+- Scores by school spending - The students were still counted however we did not consider their score. The overall school spending did not change.
+- Scores by school size - This score was also affected because the school size was altered.
+- Scores by school type - The numbers reflected change because the school type containing Thomas High School will have a lower score with those 9th graders not included.
 
-Based on these results, and as an extremely unqualified stock specialist, I might personally want to invest in DQ and SEDG based on the difference in their gains/losses. 
-- DQ had almost a 200% return in 2017 compared to a -62.6% in 2018. Lets hope for a better 2019. 
-- SEDG exceeded expectations in 2017 and gained 184.5% in returns, compared to a -7.8% loss in 2018.
 
-Hopefully his family does not lose all their money.
+
 
 ### **Summary**
 
-After refactoring the code for this assignment, it made me realize that although it can be tedious, frustrating and time consuming, it is more efficent to refactor code that's already been created than to start from scratch. Someone has already created the code you need (most likely). Your job is to find it and make it work with your project. 
+This analysis was interesting but I also thought the results were somewhat predictable, which can happen in data science. When students try to cheat and change their scores, they are not giving themselves F grades - They are probably giving themselves A and B grades. 
 
-I found myself taking code I found on Google and applying it to my module, however I found it very easy to get confused unless you are only working with one part of the code at a time. I found it was easier taking a larger, complete block of code and edit off that, rather than try and piece together multiple sources of code. 
+With this in mind, when we alter our data by taking out the 9th graders for a particular school, your overall passing scores will lower, because you are getting rid of the results of higher scores.
 
-Another disadvantage I found was how many different ways there are to do one task. Sometimes piecing together code can cause conflict and this defenetly set me back at times. 
-
-Regarding the refactored VBA script, I think it was helpful for the pieces before 1a and after 4. Your sheet is already formatted and ready to go. Copying it over is easy and allows you to direct your attention to the other portions of code we haven't tested, or even created yet.
+The budget per district and per school size will be altered as well as the new data is accounted for and calculated.
