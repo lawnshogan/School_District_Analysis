@@ -27,13 +27,13 @@
 I was able to go through and create a full report by using python to read and write our data into an easy to read report from their csv's. It's important with our analysis to be flexible as of course some new information came to light, and our report needed to adjusted last minute to account for these changes.  It appears the 9th grade students were able to accesss records and altered their reading and math scores. It's important we find these 9th graders from Thomas High School and add NaN to their score so it is not counted in our analysis. This was done using the loc() method after importing the numpy library.
 
 <p align="center">
-  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Deliverable%201.png" width="700"/>
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Readme_Images/Deliverable%201.png" width="700"/>
 </p>
 
 ### **The results...**
 
 <p align="center">
-  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Deliverable%201%20-%20Results.png" width="700"/>
+  <img src="https://github.com/lawnshogan/School_District_Analysis/blob/main/Readme_Images/Deliverable%201%20-%20Results.png" width="700"/>
 </p>
 
 
